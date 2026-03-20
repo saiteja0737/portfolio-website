@@ -7,7 +7,6 @@ import Education from './components/Education'
 import Certifications from './components/Certifications'
 import BeyondData from './components/BeyondData'
 import Contact from './components/Contact'
-import Footer from './components/Footer'
 import BackToTop from './components/BackToTop'
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
         <BeyondData />
         <Contact />
       </main>
-      <Footer />
       <BackToTop />
     </div>
   )

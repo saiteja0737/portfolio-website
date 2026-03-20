@@ -40,6 +40,7 @@ function EducationCard({ edu, index }) {
       viewport={{ once: false, amount: 0.2 }}
       transition={{ delay: index * 0.2, duration: 0.6 }}
       whileHover={{ scale: 1.02, boxShadow: '0 12px 30px rgba(30, 58, 95, 0.15)', transition: { duration: 0.2 } }}
+      className="edu-card"
       style={{
         display: 'flex',
         background: 'white',
@@ -54,6 +55,7 @@ function EducationCard({ edu, index }) {
       <img
         src={edu.image}
         alt={edu.school}
+        className="edu-card-img"
         style={{
           width: 220,
           height: 180,
