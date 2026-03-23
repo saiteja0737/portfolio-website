@@ -109,7 +109,7 @@ export default function HeroAbout() {
       id="about"
       style={{
         minHeight: '100vh',
-        paddingTop: '70px',
+        paddingTop: '50px',
         paddingBottom: '40px',
         display: 'flex',
         alignItems: 'flex-start',
@@ -138,7 +138,7 @@ export default function HeroAbout() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.5, ease: 'easeOut' }}
-            style={{ fontFamily: "'Dancing Script', cursive", fontSize: '32px', color: '#4a5568', margin: 0, marginTop: '30px' }}
+            style={{ fontFamily: "'Dancing Script', cursive", fontSize: '32px', color: '#4a5568', margin: 0, marginTop: '8px' }}
             className="leading-none"
           >
             Hello, I'm
@@ -149,7 +149,7 @@ export default function HeroAbout() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.8, type: 'spring', stiffness: 100, damping: 10 }}
-            style={{ fontFamily: "'Dancing Script', cursive", fontSize: '80px', color: '#0f2044', margin: '4px 0 0 0', lineHeight: 1 }}
+            style={{ fontFamily: "'Dancing Script', cursive", fontSize: '80px', color: '#0f2044', margin: '4px 0 4px 0', lineHeight: 1 }}
             className="font-semibold tracking-wide"
           >
             Sai Teja Adusumilli
@@ -160,7 +160,7 @@ export default function HeroAbout() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 1.1, ease: 'easeOut' }}
-            style={{ fontFamily: "'Dancing Script', cursive", fontSize: '28px', color: '#1e3a5f', marginTop: '7px', height: '36px', display: 'flex', alignItems: 'center' }}
+            style={{ fontFamily: "'Dancing Script', cursive", fontSize: '28px', color: '#1e3a5f', marginTop: '4px', height: '36px', display: 'flex', alignItems: 'center' }}
           >
             <Typewriter />
           </motion.div>
@@ -170,7 +170,7 @@ export default function HeroAbout() {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            style={{ width: 40, height: 1, background: '#cbd5e1', marginTop: '12px', transformOrigin: 'left' }}
+            style={{ width: 40, height: 1, background: '#cbd5e1', marginTop: '10px', transformOrigin: 'left' }}
           />
 
           {/* Paragraph */}
@@ -179,7 +179,7 @@ export default function HeroAbout() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.3, ease: 'easeOut' }}
-            style={{ fontFamily: "'Playfair Display', serif", color: '#374151', maxWidth: '480px', marginTop: '16px', fontSize: '18px', lineHeight: 1.8, fontWeight: 400 }}
+            style={{ fontFamily: "'Playfair Display', serif", color: '#374151', maxWidth: '480px', marginTop: '12px', marginBottom: '12px', fontSize: '18px', lineHeight: 1.8, fontWeight: 400 }}
           >
             A former banker who got curious about the patterns behind financial
             decisions and ended up diving into analytics. I enjoy working with
@@ -193,7 +193,7 @@ export default function HeroAbout() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.4, ease: 'easeOut' }}
-            style={{ display: 'flex', alignItems: 'center', gap: 24, marginTop: '12px' }}
+            style={{ display: 'flex', alignItems: 'center', gap: 24, marginTop: '10px', marginBottom: '10px' }}
           >
             {socials.map((s) => {
               const Icon = s.icon
@@ -221,7 +221,7 @@ export default function HeroAbout() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.5, ease: 'easeOut' }}
-            style={{ marginTop: '12px' }}
+            style={{ marginTop: '10px', marginBottom: '10px' }}
           >
             <motion.a
               href="/portfolio/resume.pdf"
@@ -252,7 +252,7 @@ export default function HeroAbout() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.6, ease: 'easeOut' }}
-            style={{ marginTop: '12px' }}
+            style={{ marginTop: '10px' }}
           >
             <button
               onClick={() => document.getElementById('beyond-data').scrollIntoView({ behavior: 'smooth' })}
