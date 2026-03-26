@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { SiStreamlit, SiPlotly } from 'react-icons/si'
+import { SiStreamlit, SiPlotly, SiOllama } from 'react-icons/si'
 import { BiBrain } from 'react-icons/bi'
 
 
@@ -8,24 +8,26 @@ const D = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons'
 const allSkills = [
   // Row 1
   { name: 'Python',           icon: `${D}/python/python-original.svg` },
-  { name: 'R',                icon: `${D}/r/r-original.svg` },
   { name: 'SQL',              icon: `${D}/azuresqldatabase/azuresqldatabase-original.svg` },
-  { name: 'HTML',             icon: `${D}/html5/html5-original.svg` },
+  { name: 'R',                icon: `${D}/r/r-original.svg` },
   { name: 'Machine Learning', ReactIcon: BiBrain },
+  { name: 'OpenAI API',       icon: 'https://img.icons8.com/ios-filled/100/chatgpt.png' },
+  { name: 'Ollama',           ReactIcon: SiOllama },
   { name: 'MySQL',            icon: `${D}/mysql/mysql-original.svg` },
   { name: 'PostgreSQL',       icon: `${D}/postgresql/postgresql-original.svg` },
   { name: 'AWS',              icon: `${D}/amazonwebservices/amazonwebservices-plain-wordmark.svg` },
-  { name: 'Excel',            icon: 'https://img.icons8.com/color/96/microsoft-excel-2019.png' },
   // Row 2
+  { name: 'Excel',            icon: 'https://img.icons8.com/color/96/microsoft-excel-2019.png' },
   { name: 'Tableau',          icon: 'https://img.icons8.com/color/96/tableau-software.png' },
   { name: 'Power BI',         icon: 'https://img.icons8.com/color/96/power-bi.png' },
   { name: 'Matplotlib',       icon: `${D}/matplotlib/matplotlib-original.svg` },
   { name: 'Plotly',           ReactIcon: SiPlotly },
   { name: 'Streamlit',        ReactIcon: SiStreamlit },
-  { name: 'Git',              icon: `${D}/git/git-original.svg` },
-  { name: 'VS Code',          icon: `${D}/vscode/vscode-original.svg` },
-  { name: 'Jupyter',          icon: `${D}/jupyter/jupyter-original-wordmark.svg` },
+  // Row 3
   { name: 'Cursor',           icon: 'https://avatars.githubusercontent.com/u/126759922?s=200&v=4' },
+  { name: 'VS Code',          icon: `${D}/vscode/vscode-original.svg` },
+  { name: 'Git',              icon: `${D}/git/git-original.svg` },
+  { name: 'Firebase',         icon: `${D}/firebase/firebase-plain.svg` },
 ]
 
 function SkillCard({ skill, index }) {
